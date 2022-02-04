@@ -5,13 +5,11 @@ import com.bilgeadam.repository.entity.User;
 import com.bilgeadam.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.awt.desktop.OpenFilesEvent;
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -32,7 +30,15 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity<Void> register(@RequestBody @Valid RegisterRequestDto dto){
-
+        userService.saveReturnUser(User.builder()
+                .username(dto.getEmail())
+                .password(dto.getPassword())
+                .build());
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/findall")
+    public ResponseEntity<List<User>> findAll(){
+        return ResponseEntity.ok(userService.findAll());
     }
 }
