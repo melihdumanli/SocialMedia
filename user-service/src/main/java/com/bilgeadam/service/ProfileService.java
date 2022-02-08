@@ -30,7 +30,7 @@ public class ProfileService {
         repository.delete(profile);
     }
 
-    public List<Profile> findall(Profile profile) {
+    public List<Profile> findall() {
         return repository.findAll();
     }
 

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="ProfileRepository added.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/dto/request/ProfileRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/mapper/ProfileMapper.java" afterDir="false" />
+    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="ProfileRequestDto created.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/dto/request/ProfileRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/dto/request/ProfileRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/repository/entity/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/repository/entity/Profile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/service/ProfileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +141,7 @@
       <workItem from="1643978356910" duration="486000" />
       <workItem from="1643979008437" duration="595000" />
       <workItem from="1644139932824" duration="2722000" />
-      <workItem from="1644339833592" duration="10409000" />
+      <workItem from="1644339833592" duration="11046000" />
     </task>
     <task id="LOCAL-00001" summary="UserController edited.">
       <created>1643965038319</created>
@@ -228,7 +227,28 @@
       <option name="project" value="LOCAL" />
       <updated>1644358015773</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ProfileMapper added.">
+      <created>1644358553851</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644358553851</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ProfileService and ProfileController edited.">
+      <created>1644358578297</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1644358578297</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ProfileRequestDto created.">
+      <created>1644358598886</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1644358598886</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +281,9 @@
     <MESSAGE value="Profile added." />
     <MESSAGE value="ProfileService added." />
     <MESSAGE value="ProfileRepository added." />
-    <option name="LAST_COMMIT_MESSAGE" value="ProfileRepository added." />
+    <MESSAGE value="ProfileMapper added." />
+    <MESSAGE value="ProfileService and ProfileController edited." />
+    <MESSAGE value="ProfileRequestDto created." />
+    <option name="LAST_COMMIT_MESSAGE" value="ProfileRequestDto created." />
   </component>
 </project>
