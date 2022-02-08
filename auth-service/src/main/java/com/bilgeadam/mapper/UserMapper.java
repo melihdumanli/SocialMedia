@@ -10,13 +10,12 @@ import org.mapstruct.ReportingPolicy;
 @Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE,componentModel = "spring")
 public interface UserMapper {
 
-    // Birebir aynı olan alanların eşleşmesi durumu var.
-    // Eğer alanların yani değişken adlarının aynı olmadığı durumlarda set işlemi nasıl olcak?
+    // If variable names are different, mapping is required.
     // @Mapping(source = "email",target = "username")
     @Mapping(source = "email",target = "username")
     @Mapping(source = "password",target = "password")
     User toUser(RegisterRequestDto dto);
-    // Alanlar bire bir eşit olduğu için mapping kullanmadık.
+    // Variable names are same. Mapping is not required.
     DoLoginResponseDto toDoLoginResponseDto(User user);
 
 
