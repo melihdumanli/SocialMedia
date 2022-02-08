@@ -14,10 +14,11 @@ import javax.validation.constraints.Size;
 @Data
 @Builder
 public class DoLoginRequestDto {
-    @Email(message = "Lütfen geçerli bir email adresi giriniz")
-    @NotNull(message = "EMail adresi boş geçilemez")
+    @Email(message = "Please enter a valid email address")
+    @NotNull(message = "Email can not be null")
+    private String email;
     String username;
     @NotNull
-    @Size(max = 32,min = 8,message = "Email adresi Enaz 8 Karakter ve En fazla 32 karakter olabilir")
+    @Size(max = 32,min = 8,message = "Enter a password between 8 and 32 characters")
     String password;
 }

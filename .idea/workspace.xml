@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="UserController edited.">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/dto/request/DoLoginRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/dto/response/DoLoginResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/repository/IProfileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/repository/entity/Interest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/repository/entity/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="UserService edited.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/repository/IUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/repository/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/repository/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bilgeadam/socialmedia/SocialMediaApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bilgeadam/socialmedia/SocialMediaApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/dto/request/DoLoginRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/dto/request/DoLoginRequestDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +137,7 @@
       <workItem from="1643978356910" duration="486000" />
       <workItem from="1643979008437" duration="595000" />
       <workItem from="1644139932824" duration="2722000" />
-      <workItem from="1644339833592" duration="4085000" />
+      <workItem from="1644339833592" duration="5468000" />
     </task>
     <task id="LOCAL-00001" summary="UserController edited.">
       <created>1643965038319</created>
@@ -162,7 +146,49 @@
       <option name="project" value="LOCAL" />
       <updated>1643965038319</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="User, UserController and UserRepository edited.">
+      <created>1644344223057</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644344223057</updated>
+    </task>
+    <task id="LOCAL-00003" summary="dependencies.gradle and build.gradle edited.">
+      <created>1644344282821</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644344282821</updated>
+    </task>
+    <task id="LOCAL-00004" summary="application.yml edited.">
+      <created>1644344306564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644344306564</updated>
+    </task>
+    <task id="LOCAL-00005" summary="AuthService DTO created.">
+      <created>1644344384256</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644344384256</updated>
+    </task>
+    <task id="LOCAL-00006" summary="AuthService mapper created.">
+      <created>1644344433035</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1644344433035</updated>
+    </task>
+    <task id="LOCAL-00007" summary="UserService edited.">
+      <created>1644344467237</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1644344467237</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +210,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UserController edited." />
-    <option name="LAST_COMMIT_MESSAGE" value="UserController edited." />
+    <MESSAGE value="User, UserController and UserRepository edited." />
+    <MESSAGE value="dependencies.gradle and build.gradle edited." />
+    <MESSAGE value="application.yml edited." />
+    <MESSAGE value="AuthService DTO created." />
+    <MESSAGE value="AuthService mapper created." />
+    <MESSAGE value="UserService edited." />
+    <option name="LAST_COMMIT_MESSAGE" value="UserService edited." />
   </component>
 </project>
