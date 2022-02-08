@@ -1,5 +1,7 @@
 package com.bilgeadam.service;
 
+import com.bilgeadam.dto.request.ProfileRequestDto;
+import com.bilgeadam.mapper.ProfileMapper;
 import com.bilgeadam.repository.IProfileRepository;
 import com.bilgeadam.repository.entity.Profile;
 import lombok.RequiredArgsConstructor;
@@ -13,8 +15,10 @@ import java.util.Optional;
 public class ProfileService {
 
     private final IProfileRepository repository;
+    private final ProfileMapper profileMapper;
 
-    public void save(Profile profile) {
+    public void save(ProfileRequestDto dto) {
+        Profile profile = profileMapper.toProfile(dto);
         repository.save(profile);
     }
 
