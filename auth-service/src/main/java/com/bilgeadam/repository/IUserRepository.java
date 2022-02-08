@@ -9,15 +9,15 @@ import java.util.Optional;
 
 @Repository
 public interface IUserRepository extends JpaRepository<User, Long> {
-    /*
-     * Kullanıcının oturum açabilmesi için
-     * @param username  E-mail bilgisi
-     * @param password  Şifre bilgisi
+    /**
+     * Getting email and password info to let user login.
+     * @param username  (e-mail info)
+     * @param password  (password info)
      * @return */
     Optional<User> findByUsernameAndPassword(String username, String password);
 
-    /*
-     * Durumlarına göre kullanıcıları listeler
+    /**
+     * Lists users by status
      * @param status
      * @return
      * */

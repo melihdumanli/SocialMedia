@@ -22,10 +22,11 @@ public class User {
     String username;
     String password;
     /*
-    * Status kullanıcının aktiflik durumunu belirtir.
-    * 0-> pasif kullanıcı
-    * 1-> aktif kullanıcı
-    * 2-> engellenmiş kullanıcı
+    * Status describes whether the user is active or not.
+    *
+    * 0-> passive user
+    * 1-> active user
+    * 2-> banned user
     */
     int status;
     long createDate;
