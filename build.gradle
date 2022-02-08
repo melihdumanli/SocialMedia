@@ -36,8 +36,11 @@ allprojects {
     dependencies {
         implementation  libs.springBootWeb
         implementation  libs.lombok
-        implementation  libs.springDataJpa
+        annotationProcessor libs.lombok
         implementation  libs.springValidation
+        implementation  libs.openapi
+        implementation  libs.mapstruct
+        annotationProcessor  libs.mapstructProcessor
     }
 }
 configurations {
@@ -45,6 +48,3 @@ configurations {
         extendsFrom annotationProcessor
     }
 }
-
-
-
