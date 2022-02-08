@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import nonapi.io.github.classgraph.json.Id;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -27,7 +27,10 @@ public class Profile {
     String gender;
     String about;
     List<Interest> interest;
+    Education education;
+    Work work;
 
+    @Document
     class Education{
         String name;
         int from;
@@ -35,6 +38,7 @@ public class Profile {
         String about;
     }
 
+    @Document
     class Work{
         String company;
         String designation;
