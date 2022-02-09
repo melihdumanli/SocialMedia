@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-bilgerest
+  labels:
+    team: backenddeveloper
+spec:
+  containers:
+  - name: pod-bilgerest
+    image: muhammedali55/bilgerest:v001
+    resources:
+      limits:
+        memory: "1024Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 9090
+        hostPort: 80
