@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="ProfileRequestDto created.">
+    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="UserService components were edited because of mapping problems.">
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/constant/RestApiUrls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/constant/RestApiUrls.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/dto/request/ProfileRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/dto/request/ProfileRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/repository/entity/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/repository/entity/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,16 +75,19 @@
     <property name="jdk.selected.JAVA_MODULE" value="17" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bilgeadam.constant" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.UserServiceSpring">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,7 +148,8 @@
       <workItem from="1643978356910" duration="486000" />
       <workItem from="1643979008437" duration="595000" />
       <workItem from="1644139932824" duration="2722000" />
-      <workItem from="1644339833592" duration="11046000" />
+      <workItem from="1644339833592" duration="12753000" />
+      <workItem from="1644388445846" duration="1449000" />
     </task>
     <task id="LOCAL-00001" summary="UserController edited.">
       <created>1643965038319</created>
@@ -248,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644358598886</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="UserService components were edited because of mapping problems.">
+      <created>1644359406756</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1644359406756</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +299,7 @@
     <MESSAGE value="ProfileMapper added." />
     <MESSAGE value="ProfileService and ProfileController edited." />
     <MESSAGE value="ProfileRequestDto created." />
-    <option name="LAST_COMMIT_MESSAGE" value="ProfileRequestDto created." />
+    <MESSAGE value="UserService components were edited because of mapping problems." />
+    <option name="LAST_COMMIT_MESSAGE" value="UserService components were edited because of mapping problems." />
   </component>
 </project>

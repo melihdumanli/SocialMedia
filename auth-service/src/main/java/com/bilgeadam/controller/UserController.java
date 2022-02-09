@@ -1,5 +1,6 @@
 package com.bilgeadam.controller;
 
+import static com.bilgeadam.constant.RestApiUrls.*;
 import com.bilgeadam.dto.request.DoLoginRequestDto;
 import com.bilgeadam.dto.request.RegisterRequestDto;
 import com.bilgeadam.dto.response.DoLoginResponseDto;
@@ -15,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping(VERSION + USER)
 public class UserController {
 
     @Autowired
@@ -40,7 +41,7 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/findall")
+    @GetMapping(FINDALL)
     public ResponseEntity<List<User>> findAll(){
         return ResponseEntity.ok(userService.findAll());
     }
