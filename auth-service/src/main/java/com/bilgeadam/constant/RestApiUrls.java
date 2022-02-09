@@ -3,7 +3,7 @@ package com.bilgeadam.constant;
 public class RestApiUrls {
     /** Rest API Service Versions
     */
-    public static final String VERSION = "v1";
+    public static final String VERSION = "/v1";
 
     /** Writing map lists in Controller classes
     */
