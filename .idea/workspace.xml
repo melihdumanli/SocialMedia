@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="UserService components were edited because of mapping problems.">
+    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="URL's added.">
       <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/constant/RestApiUrls.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/constant/RestApiUrls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/repository/entity/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/repository/entity/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +142,7 @@
       <workItem from="1643979008437" duration="595000" />
       <workItem from="1644139932824" duration="2722000" />
       <workItem from="1644339833592" duration="12753000" />
-      <workItem from="1644388445846" duration="1449000" />
+      <workItem from="1644388445846" duration="2218000" />
     </task>
     <task id="LOCAL-00001" summary="UserController edited.">
       <created>1643965038319</created>
@@ -263,7 +256,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644359406756</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Feign Client added.">
+      <created>1644394706747</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1644394706747</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Controllers edited.">
+      <created>1644394759908</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1644394759908</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +307,9 @@
     <MESSAGE value="ProfileService and ProfileController edited." />
     <MESSAGE value="ProfileRequestDto created." />
     <MESSAGE value="UserService components were edited because of mapping problems." />
-    <option name="LAST_COMMIT_MESSAGE" value="UserService components were edited because of mapping problems." />
+    <MESSAGE value="Feign Client added." />
+    <MESSAGE value="Controllers edited." />
+    <MESSAGE value="URL's added." />
+    <option name="LAST_COMMIT_MESSAGE" value="URL's added." />
   </component>
 </project>
