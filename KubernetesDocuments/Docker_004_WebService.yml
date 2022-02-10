@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-web-loadbalancer
+spec:
+  selector:
+    team: frontenddeveloper
+  type: NodePort
+  ports:
+  - port: 9091
+    targetPort: 80
+    nodePort: 30001
