@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rest-service-deployment
+  name: web-service-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      team: backenddeveloper
+      team: frontenddeveloper
   template:
     metadata:
       labels:
-        team: backenddeveloper
+        team: frontenddeveloper
       annotations:
         group: javaboost
         email: java@java.com
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: pod-bilgerest
-        image: muhammedali55/bilgerest:v001
+        image: muhammedali55/bilgeweb:v001
         resources:
           limits:
             memory: "1024Mi"
