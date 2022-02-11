@@ -14,8 +14,24 @@ public class LoginController {
     @GetMapping("login")
     public ModelAndView login(){
         ModelAndView modelAndView = new ModelAndView();
+        /**
+         * template altındaki html page ile aynı olmalıdır.
+         * public altında ki html file ları KULLANILAMAZ
+         */
         modelAndView.setViewName("login");
-        modelAndView.addObject("model", LoginPageModel.builder().title("Become a Member").build());
+        /*
+        List<LoginPageModel.urun> list = new ArrayList<>();
+        list.add(LoginPageModel.urun.builder().urunAdi("PC").build());
+        list.add(LoginPageModel.urun.builder().urunAdi("LAPTOP").build());
+        modelAndView.addObject("model",
+                LoginPageModel
+                        .builder()
+                        .title("Üye Ol!!!")
+                        .urunler(list)
+                        .build());
+        modelAndView.addObject("model2",
+                "Başka Model");
+        */
         return modelAndView;
     }
 }

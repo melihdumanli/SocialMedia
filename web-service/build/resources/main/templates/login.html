@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
-
-<!-- Mirrored from themified.com/friend-finder/index-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Feb 2022 20:13:18 GMT -->
+<html lang="tr" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -138,11 +136,25 @@
                     <!--Registration Form Contents-->
                     <div class="tab-content">
                         <div class="tab-pane active" id="register">
-                            <h3>Register Now !!!</h3>
-                            <p class="text-muted">Be cool and join today. Meet millions</p>
+                            <h3 style="text-align: center">Become a Member</h3>
+                            <!--
+                            <p th:each="ls : ${model.urunler}">
+                                <label th:text="${ls.urunAdi}" th:style="${lsStat.index==0 ? 'color:red' : ''}"/>
+                            </p>
+                            -->
+
 
                             <!--Register Form-->
-                            <form name="registration_form" id='registration_form' class="form-inline">
+                            <form name="registration_form" id='registration_form' class="form-inline"
+                            action="/register" method="post" enctype="multipart/form-data">
+                                <div class="row" style="text-align: center"  >
+                                    <div class="form-group">
+                                        <img src="https://bilge-web-statics-1.s3.us-east-2.amazonaws.com/bilgesocialmedia/images/users/user-5.jpg" id="profile_image_id" width="150px" height="150px" onclick="select_image()"/>
+                                        <div hidden>
+                                            <input type="file" name="profile_picture" id="input_image_id">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="form-group col-xs-6">
                                         <label for="firstname" class="sr-only">First Name</label>
@@ -156,7 +168,7 @@
                                 <div class="row">
                                     <div class="form-group col-xs-12">
                                         <label for="email" class="sr-only">Email</label>
-                                        <input id="email" class="form-control input-group-lg" type="text" name="Email" title="Enter Email" placeholder="Your Email"/>
+                                        <input id="email" class="form-control input-group-lg" type="text" name="email" title="Enter Email" placeholder="Your Email"/>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -256,7 +268,7 @@
                                     </div>
                                     <div class="form-group col-xs-6">
                                         <label for="country" class="sr-only"></label>
-                                        <select class="form-control" id="country">
+                                        <select class="form-control" id="country" name="country">
                                             <option value="country" disabled selected>Country</option>
                                             <option value="AFG">Afghanistan</option>
                                             <option value="ALA">�land Islands</option>
@@ -510,9 +522,11 @@
                                         </select>
                                     </div>
                                 </div>
+
+                                <p><a href="#">Already have an account?</a></p>
+                                <button class="btn btn-primary">Register Now</button>
                             </form><!--Register Now Form Ends-->
-                            <p><a href="#">Already have an account?</a></p>
-                            <button class="btn btn-primary">Register Now</button>
+
                         </div><!--Registration Form Contents Ends-->
 
                         <!--Login-->
@@ -563,6 +577,7 @@
     <div class="spinner"></div>
 </div>
 
+
 <!-- Scripts
 ================================================= -->
 <script src="https://bilge-web-statics-1.s3.us-east-2.amazonaws.com/bilgesocialmedia/js/jquery-3.1.1.min.js"></script>
@@ -570,7 +585,24 @@
 <script src="https://bilge-web-statics-1.s3.us-east-2.amazonaws.com/bilgesocialmedia/js/jquery.appear.min.js"></script>
 <script src="https://bilge-web-statics-1.s3.us-east-2.amazonaws.com/bilgesocialmedia/js/jquery.incremental-counter.js"></script>
 <script src="https://bilge-web-statics-1.s3.us-east-2.amazonaws.com/bilgesocialmedia/js/script.js"></script>
-
+<script>
+    function select_image(){
+        var profile_picture = document.getElementById("input_image_id");
+        profile_picture.click();
+    }
+    const fileIn = document.getElementById('input_image_id'); // input bileşeni, yani resmi seçtimiz bileşen
+    fileOut = document.getElementById('profile_image_id');// resim bileşeni
+    const readUrl = event => {
+        if(event.files && event.files[0]) {
+            let reader = new FileReader();
+            reader.onload = event => fileOut.src = event.target.result;
+            reader.readAsDataURL(event.files[0])
+        }
+    }
+    fileIn.onchange = function() {
+        readUrl(this);
+    };
+</script>
 </body>
 
 </html>

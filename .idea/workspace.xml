@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="WebService added. build.gradle, application.yml updated.">
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/model/LoginPageModel.java" afterDir="false" />
+    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="Login page added.">
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/dto/request/RegisterRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/manager/UserServiceManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/service/ProfileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-service/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/resources/templates/login.html" afterDir="false" />
     </list>
@@ -54,9 +59,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -124,13 +129,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.WebService">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -289,7 +296,8 @@
       <workItem from="1644397757450" duration="7613000" />
       <workItem from="1644427089630" duration="349000" />
       <workItem from="1644428895189" duration="17000" />
-      <workItem from="1644566228407" duration="4274000" />
+      <workItem from="1644566228407" duration="5165000" />
+      <workItem from="1644577314506" duration="4375000" />
     </task>
     <task id="LOCAL-00001" summary="UserController edited.">
       <created>1643965038319</created>
@@ -466,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644570033591</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Login page added.">
+      <created>1644571756450</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1644571756450</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,6 +526,7 @@
     <MESSAGE value="LoadBalancer added." />
     <MESSAGE value="LanguageCreator added." />
     <MESSAGE value="WebService added. build.gradle, application.yml updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="WebService added. build.gradle, application.yml updated." />
+    <MESSAGE value="Login page added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Login page added." />
   </component>
 </project>
