@@ -43,11 +43,11 @@ public class UserController {
     }
 
     @PostMapping(REGISTER)
-    public ResponseEntity<Void> register(@RequestBody @Valid RegisterRequestDto dto){
+    public ResponseEntity<String > register(@RequestBody @Valid RegisterRequestDto dto){
         // First step -> User has to login for authentication
         User user = userService.saveReturnUser(dto);
         // Second step -> A request will send to User-Service to save user. Processes will be done based on response.
-        profileManager.save(ProfileRequestDto.builder()
+        String id = profileManager.save(ProfileRequestDto.builder()
                         .authid(user.getId())
                         .email(dto.getEmail())
                         .firstname(dto.getName())
@@ -56,8 +56,8 @@ public class UserController {
                         .city(dto.getCity())
                         .city(dto.getCity())
                         .gender(dto.getGender())
-                .build());
-        return ResponseEntity.ok().build();
+                .build()).getBody();
+        return ResponseEntity.ok(id);
     }
 
     @GetMapping(FINDALL)
