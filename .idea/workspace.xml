@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="LoadBalancer added.">
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/WebService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="WebService added. build.gradle, application.yml updated.">
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/model/LoginPageModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +289,7 @@
       <workItem from="1644397757450" duration="7613000" />
       <workItem from="1644427089630" duration="349000" />
       <workItem from="1644428895189" duration="17000" />
-      <workItem from="1644566228407" duration="3614000" />
+      <workItem from="1644566228407" duration="4274000" />
     </task>
     <task id="LOCAL-00001" summary="UserController edited.">
       <created>1643965038319</created>
@@ -452,7 +445,28 @@
       <option name="project" value="LOCAL" />
       <updated>1644569759575</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="LanguageCreator added.">
+      <created>1644569902844</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1644569902844</updated>
+    </task>
+    <task id="LOCAL-00024" summary="LanguageCreator added.">
+      <created>1644569913123</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1644569913123</updated>
+    </task>
+    <task id="LOCAL-00025" summary="WebService added. build.gradle, application.yml updated.">
+      <created>1644570033591</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1644570033591</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,6 +509,8 @@
     <MESSAGE value="Feign Client operations completed." />
     <MESSAGE value="Dockerize completed." />
     <MESSAGE value="LoadBalancer added." />
-    <option name="LAST_COMMIT_MESSAGE" value="LoadBalancer added." />
+    <MESSAGE value="LanguageCreator added." />
+    <MESSAGE value="WebService added. build.gradle, application.yml updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="WebService added. build.gradle, application.yml updated." />
   </component>
 </project>
