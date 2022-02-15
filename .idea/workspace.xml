@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="AWS S3 Bucket configuration.">
+    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="Zipkin Configuration Implemented">
       <change afterPath="$PROJECT_DIR$/api-gateway-service/build.gradle" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/java/com/bilgeadam/ApiGatewayService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/java/com/bilgeadam/controller/FallBackController.java" afterDir="false" />
@@ -17,33 +17,13 @@
       <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/services/user-service.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/services/web-service.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/dto/request/FindByAuthId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/constants/S3Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/dto/request/DoLoginRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/dto/response/DoLoginResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/service/S3ManagerService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/web-service/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/dto/response/DoLoginResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/dto/response/DoLoginResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/manager/ProfileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/manager/ProfileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/build/classes/java/main/com/bilgeadam/WebService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build/classes/java/main/com/bilgeadam/WebService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-service/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build/resources/main/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/WebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/WebService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/manager/UserServiceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/manager/AuthServiceManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -355,7 +335,7 @@
       <workItem from="1644577314506" duration="6605000" />
       <workItem from="1644822056890" duration="16281000" />
       <workItem from="1644950809353" duration="1957000" />
-      <workItem from="1644953275382" duration="371000" />
+      <workItem from="1644953275382" duration="480000" />
     </task>
     <task id="LOCAL-00001" summary="UserController edited.">
       <created>1643965038319</created>
@@ -588,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644924593567</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Zipkin Configuration Implemented">
+      <created>1644953676413</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1644953676414</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,7 +608,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="RequestDto edited." />
     <MESSAGE value="Mapper edited." />
     <MESSAGE value="Profile added." />
     <MESSAGE value="ProfileService added." />
@@ -646,6 +632,7 @@
     <MESSAGE value="Zipkin deployment and loadbalancer objects created" />
     <MESSAGE value="Login and register pages are separated." />
     <MESSAGE value="AWS S3 Bucket configuration." />
-    <option name="LAST_COMMIT_MESSAGE" value="AWS S3 Bucket configuration." />
+    <MESSAGE value="Zipkin Configuration Implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zipkin Configuration Implemented" />
   </component>
 </project>
