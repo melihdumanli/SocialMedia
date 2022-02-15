@@ -4,16 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="Login page added.">
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/dto/request/RegisterRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/manager/UserServiceManager.java" afterDir="false" />
+    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="AWS S3 Bucket configuration.">
+      <change afterPath="$PROJECT_DIR$/api-gateway-service/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/java/com/bilgeadam/ApiGatewayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/java/com/bilgeadam/controller/FallBackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/dto/request/FindByAuthIdDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/bilgeadam/ConfigServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/services/auth-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/services/user-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/services/web-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/dto/request/FindByAuthId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/constants/S3Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/dto/request/DoLoginRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/dto/response/DoLoginResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/service/S3ManagerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/dto/response/DoLoginResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/dto/response/DoLoginResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/manager/ProfileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/manager/ProfileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/controller/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/bilgeadam/service/ProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/build/classes/java/main/com/bilgeadam/WebService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build/classes/java/main/com/bilgeadam/WebService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/WebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/WebService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/manager/UserServiceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/manager/AuthServiceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +68,15 @@
         <task path="$PROJECT_DIR$/user-service">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/api-gateway-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/config-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/web-service">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -49,6 +89,19 @@
                 <item name="SocialMedia" type="f1a62948:ProjectNode" />
                 <item name="web-service" type="2d1252cf:ModuleNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SocialMedia" type="f1a62948:ProjectNode" />
+                <item name="web-service" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SocialMedia" type="f1a62948:ProjectNode" />
+                <item name="web-service" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -59,9 +112,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -115,6 +168,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -128,24 +182,11 @@
       <recent name="com.bilgeadam.constant" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.WebService">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BilgeAdamSocialMedia [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayService">
+    <configuration name="BilgeAdamSocialMedia:user-service [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -163,31 +204,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BilgeAdamSocialMedia [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BilgeAdamSocialMedia:web-service [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BilgeAdamSocialMedia:auth-service [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/auth-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/web-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -205,10 +225,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BilgeAdamSocialMedia:auth-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BilgeAdamSocialMedia:web-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/auth-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/web-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -217,6 +237,27 @@
         <option name="taskNames">
           <list>
             <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BilgeAdamSocialMedia:web-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/web-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -239,9 +280,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiGatewayService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SocialMedia.api-gateway-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bilgeadam.ApiGatewayService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthServiceSpring" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SocialMedia.auth-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bilgeadam.AuthServiceSpring" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SocialMedia.config-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bilgeadam.ConfigServer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -269,10 +324,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.WebService" />
-        <item itemvalue="Gradle.BilgeAdamSocialMedia [buildDependents]" />
-        <item itemvalue="Gradle.BilgeAdamSocialMedia [build]" />
-        <item itemvalue="Gradle.BilgeAdamSocialMedia:auth-service [buildDependents]" />
-        <item itemvalue="Gradle.BilgeAdamSocialMedia:auth-service [build]" />
+        <item itemvalue="Gradle.BilgeAdamSocialMedia:web-service [buildDependents]" />
+        <item itemvalue="Gradle.BilgeAdamSocialMedia:web-service [build]" />
+        <item itemvalue="Gradle.BilgeAdamSocialMedia:web-service [clean]" />
+        <item itemvalue="Gradle.BilgeAdamSocialMedia:user-service [buildDependents]" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +352,10 @@
       <workItem from="1644427089630" duration="349000" />
       <workItem from="1644428895189" duration="17000" />
       <workItem from="1644566228407" duration="5165000" />
-      <workItem from="1644577314506" duration="4375000" />
+      <workItem from="1644577314506" duration="6605000" />
+      <workItem from="1644822056890" duration="16281000" />
+      <workItem from="1644950809353" duration="1957000" />
+      <workItem from="1644953275382" duration="371000" />
     </task>
     <task id="LOCAL-00001" summary="UserController edited.">
       <created>1643965038319</created>
@@ -481,7 +539,56 @@
       <option name="project" value="LOCAL" />
       <updated>1644571756450</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Login page edited.">
+      <created>1644582127351</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1644582127351</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Login page edited.">
+      <created>1644582135338</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1644582135338</updated>
+    </task>
+    <task id="LOCAL-00029" summary="WebService and AuthService data transfer entities created.">
+      <created>1644582238793</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1644582238793</updated>
+    </task>
+    <task id="LOCAL-00030" summary="MongoDB deployment and loadbalancer objects created">
+      <created>1644924325281</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1644924325281</updated>
+    </task>
+    <task id="LOCAL-00031" summary="PostgreSQL deployment and loadbalancer objects created">
+      <created>1644924340632</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1644924340632</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Zipkin deployment and loadbalancer objects created">
+      <created>1644924432341</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1644924432341</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Login and register pages are separated.">
+      <created>1644924593567</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1644924593567</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,20 +602,25 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UserController edited." />
-    <MESSAGE value="User, UserController and UserRepository edited." />
-    <MESSAGE value="dependencies.gradle and build.gradle edited." />
-    <MESSAGE value="application.yml edited." />
-    <MESSAGE value="AuthService DTO created." />
-    <MESSAGE value="AuthService mapper created." />
-    <MESSAGE value="UserService edited." />
     <MESSAGE value="RequestDto edited." />
     <MESSAGE value="Mapper edited." />
     <MESSAGE value="Profile added." />
@@ -527,6 +639,13 @@
     <MESSAGE value="LanguageCreator added." />
     <MESSAGE value="WebService added. build.gradle, application.yml updated." />
     <MESSAGE value="Login page added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login page added." />
+    <MESSAGE value="Login page edited." />
+    <MESSAGE value="WebService and AuthService data transfer entities created." />
+    <MESSAGE value="MongoDB deployment and loadbalancer objects created" />
+    <MESSAGE value="PostgreSQL deployment and loadbalancer objects created" />
+    <MESSAGE value="Zipkin deployment and loadbalancer objects created" />
+    <MESSAGE value="Login and register pages are separated." />
+    <MESSAGE value="AWS S3 Bucket configuration." />
+    <option name="LAST_COMMIT_MESSAGE" value="AWS S3 Bucket configuration." />
   </component>
 </project>

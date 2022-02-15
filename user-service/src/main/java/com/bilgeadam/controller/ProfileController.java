@@ -1,6 +1,8 @@
 package com.bilgeadam.controller;
 
 import static com.bilgeadam.constant.RestApiUrls.*;
+
+import com.bilgeadam.dto.request.FindByAuthId;
 import com.bilgeadam.dto.request.ProfileRequestDto;
 import com.bilgeadam.repository.entity.Profile;
 import com.bilgeadam.service.ProfileService;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(VERSION + PROFILE)
@@ -24,6 +27,16 @@ public class ProfileController {
     public ResponseEntity<String> save(@RequestBody @Valid ProfileRequestDto dto){
         String id = profileService.save(dto);
         return ResponseEntity.ok(id);
+    }
+
+    @PostMapping(FINDBYAUTHID)
+    public ResponseEntity<String> findByAuthId(@RequestBody @Valid FindByAuthId dto){
+        Optional<Profile> profile = profileService.findByAuthId(dto.getAuhtid());
+        if(profile.isPresent()){
+            return ResponseEntity.ok(profile.get().getId());
+        }else{
+            return ResponseEntity.ok("");
+        }
     }
 
     @GetMapping(GETALL)

@@ -21,6 +21,6 @@ public class DoLoginResponseDto {
      *  400 : request failed
      *  410 : user not found
      *  500 : unexpected error
-    * */
+     * */
     int error;
 }

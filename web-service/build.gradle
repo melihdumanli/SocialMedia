@@ -3,6 +3,12 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:$versions.springBoot")
     }
 }
+
 dependencies {
-    implementation  libs.thymeleaf
+    implementation   libs.thymeleaf
+    implementation   libs.awsS3
+    implementation   libs.awsCloudFront
+    //  implementation   libs.springSecurity
+    implementation   libs.springCloudClientConfig
+
 }
