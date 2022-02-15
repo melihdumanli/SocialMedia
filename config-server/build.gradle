@@ -1,0 +1,11 @@
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$versions.springBoot")
+    }
+}
+
+dependencies {
+    implementation libs.springCloudStarterConfig
+    implementation libs.springCloudConfig
+    implementation   libs.springSecurity
+}
