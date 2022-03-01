@@ -9,6 +9,7 @@ import com.bilgeadam.manager.ProfileManager;
 import com.bilgeadam.repository.entity.User;
 import com.bilgeadam.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,7 +18,8 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping(VERSION + USER)
+@RequestMapping(VERSION + AUTH)
+@Slf4j
 public class UserController {
 
     @Autowired
@@ -39,6 +41,8 @@ public class UserController {
 
     @GetMapping("/hello")
     public String hello(){
+        log.info("This is welcome page");
+        log.info("An error occurred.");
         return "Hello";
     }
 
