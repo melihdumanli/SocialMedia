@@ -8,6 +8,10 @@ public class RestApiUrls {
     /** Writing map lists in Controller classes
     */
     public static final String PROFILE = "/profile";
+    public static final String USER = "/user";
+    public static final String FOLLOW = "/follow";
+    public static final String POST = "/post";
+
     public static final String FINDBYAUTHID="/findByAuthId";
 
     /** Defining General requests
