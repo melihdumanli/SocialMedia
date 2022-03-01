@@ -47,16 +47,16 @@ public class UserController {
         // First step -> User has to login for authentication
         User user = userService.saveReturnUser(dto);
         // Second step -> A request will send to User-Service to save user. Processes will be done based on response.
-        String id = profileManager.save(ProfileRequestDto.builder()
-                        .authid(user.getId())
-                        .email(dto.getEmail())
-                        .firstname(dto.getName())
-                        .lastname(dto.getSurname())
-                        .country(dto.getCountry())
-                        .city(dto.getCity())
-                        .city(dto.getCity())
-                        .gender(dto.getGender())
-                .build()).getBody();
+        ProfileRequestDto asdDto = ProfileRequestDto.builder()
+                .authid(user.getId())
+                .email(dto.getEmail())
+                .firstname(dto.getName())
+                .lastname(dto.getSurname())
+                .country(dto.getCountry())
+                .city(dto.getCity())
+                .gender(dto.getGender())
+                .build();
+        String id = profileManager.save(asdDto).getBody();
         return ResponseEntity.ok(id);
     }
 

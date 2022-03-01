@@ -18,8 +18,8 @@ import javax.validation.Valid;
 public interface ProfileManager {
 
     @PostMapping(SAVE)
-    ResponseEntity<String> save(@RequestBody ProfileRequestDto dto);
+    public ResponseEntity<String> save(@RequestBody ProfileRequestDto dto);
 
     @PostMapping(FINDBYAUTHID)
-    ResponseEntity<String> findByAuthId(@RequestBody @Valid FindByAuthIdDto dto);
+    public ResponseEntity<String> findByAuthId(@RequestBody @Valid FindByAuthIdDto dto);
 }

@@ -150,10 +150,10 @@
                                 <div class="row" style="text-align: center">
                                     <div class="form-group">
                                         <img src="https://bilge-web-statics-1.s3.us-east-2.amazonaws.com/bilgesocialmedia/images/users/user-5.jpg"
-                                             id="profile_resim_id" width="150px" height="150px" onclick="resim_sec()" />
+                                             id="profile_picture_id" width="150px" height="150px" onclick="select_image()" />
 
                                         <div hidden>
-                                            <input type="file" name="resim" id="input_resim_id" />
+                                            <input type="file" name="image" id="input_picture_id" />
                                         </div>
 
                                     </div>
@@ -554,12 +554,12 @@
 <script src="https://bilge-web-statics-1.s3.us-east-2.amazonaws.com/bilgesocialmedia/js/jquery.incremental-counter.js"></script>
 <script src="https://bilge-web-statics-1.s3.us-east-2.amazonaws.com/bilgesocialmedia/js/script.js"></script>
 <script>
-    function resim_sec() {
-        var resim = document.getElementById("input_resim_id");
-        resim.click();
+    function select_image() {
+        var profile_picture = document.getElementById("input_picture_id");
+        profile_picture.click();
     }
-    const fileIn = document.getElementById('input_resim_id'); // input bileşeni, yani resmi seçtimiz bileşen
-    fileOut = document.getElementById('profile_resim_id');// resim bileşeni
+    const fileIn = document.getElementById('input_picture_id'); // input bileşeni, yani resmi seçtimiz bileşen
+    fileOut = document.getElementById('profile_picture_id');// resim bileşeni
     const readUrl = event => {
         if(event.files && event.files[0]) {
             let reader = new FileReader();

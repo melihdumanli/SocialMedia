@@ -48,7 +48,7 @@ public class LoginController {
     public Object login(@Valid LoginDto loginDto) {
         DoLoginResponseDto response = loginService.Login(loginDto);
         /**
-         * 200 ile kullanınını profil bilgisiini olsuğunu mğrendim
+         * 200 ile kullanınını profil bilgisiini olsuğunu öğrendim
          * profileid= 45435bcgbrtyb
          */
         if(response.getError() == 200){

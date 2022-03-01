@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
@@ -24,6 +25,12 @@ public class RegisterController {
 
     private final AuthServiceManager authServiceManager;
 
+    //http:localhost/register
+    @GetMapping("/register")
+    public ModelAndView register() {
+        return new ModelAndView("register");
+    }
+
     @PostMapping("/register")
     public Object register(String firstname, String lastname, String email, String password, String country, MultipartFile image) {
         ModelAndView model = new ModelAndView();
@@ -40,7 +47,7 @@ public class RegisterController {
             s3ManagerService.putObject(profileId+".png",image);
             model.setViewName("login");
         }catch (Exception e){
-            log.error("resim yüklenemedi...: "+e.getMessage());
+            log.error("Uploading Image Failed...: "+e.getMessage());
             model.setViewName("register");
         }
         return model;

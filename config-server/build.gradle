@@ -5,7 +5,7 @@ buildscript {
 }
 
 dependencies {
-    implementation libs.springCloudStarterConfig
-    implementation libs.springCloudConfig
-    implementation   libs.springSecurity
+    implementation  libs.springCloudStarterConfig
+    implementation  libs.springCloudConfig
+    implementation  libs.springSecurity
 }
