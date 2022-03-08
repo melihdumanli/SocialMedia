@@ -4,6 +4,7 @@ import static com.bilgeadam.constant.RestApiUrls.*;
 
 import com.bilgeadam.dto.request.FindByAuthId;
 import com.bilgeadam.dto.request.ProfileRequestDto;
+import com.bilgeadam.rabbitmq.producer.ElasticProfileProducer;
 import com.bilgeadam.repository.entity.Profile;
 import com.bilgeadam.service.ProfileService;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +21,7 @@ import java.util.Optional;
 public class ProfileController {
 
     private final ProfileService profileService;
-
+    private final ElasticProfileProducer elasticProfileProducer;
 
     @PostMapping(SAVE)
 // @PostMapping("/save")
