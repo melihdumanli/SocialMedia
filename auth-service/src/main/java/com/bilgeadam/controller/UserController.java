@@ -52,6 +52,14 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 
+    @PostMapping("/deleteuser")
+    public ResponseEntity<Void> deleteUser(String message){
+        userServiceProducer.deleteUser(Notification.builder()
+                .message(message)
+                .build());
+        return ResponseEntity.ok().build();
+    }
+
     @GetMapping("/hello")
     public String hello(){
         log.info("This is welcome page");

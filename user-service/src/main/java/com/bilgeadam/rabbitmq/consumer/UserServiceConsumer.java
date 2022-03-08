@@ -13,4 +13,9 @@ public class UserServiceConsumer {
     public void consumeNotification(Notification notification){
         log.info("New notification: " + notification.toString());
     }
+
+    @RabbitListener(queues = "queueDeleteUser")
+    public void consumeDeleteUser(Notification notification){
+        log.info("User Deleted: "+ notification.toString());
+    }
 }
