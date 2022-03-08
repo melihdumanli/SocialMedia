@@ -1,2 +1,10 @@
-server:
-  port: 80
+spring:
+  cloud:
+    config:
+      username: "administrator"
+      password: "Bilge123!!"
+      uri: "http://localhost:8888"
+  config:
+    import: "configserver:"
+  application:
+    name: web-service

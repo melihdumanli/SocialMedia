@@ -1,11 +1,10 @@
-server:
-  port: 8090
-
 spring:
-  data:
-    mongodb:
-      database: socialmedia
-      username: bilgeadamuser
-      password: 'bilgeadam!'
-      host: 192.168.1.12
-      port: 27000
+  cloud:
+    config:
+      username: "administrator"
+      password: "Bilge123!!"
+      uri: "http://localhost:8888"
+  config:
+    import: "configserver:"
+  application:
+    name: user-service
