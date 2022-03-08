@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploymentelastic
+spec:
+  selector:
+    matchLabels:
+      app: deploymentelastic
+  template:
+    metadata:
+      labels:
+        app: deploymentelastic
+        loadbalancer: loadpods
+    spec:
+      containers:
+        - name: elastic
+          image: elasticsearch:7.17.0
+          resources:
+            limits:
+              memory: "2048Mi"
+              cpu: "200m"
+          ports:
+            - containerPort: 9200
+            - containerPort: 9300

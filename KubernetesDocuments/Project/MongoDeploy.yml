@@ -10,6 +10,7 @@ spec:
     metadata:
       labels:
         app: deploymentmongodb
+        loadbalancer: loadpods
     spec:
       containers:
         - name: mongoimage

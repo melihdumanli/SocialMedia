@@ -1,0 +1,28 @@
+server:
+  port: 8090
+
+spring:
+  rabbitmq:
+    host: 34.118.80.59
+    port: 5672
+    username: userservice
+    password: 123456
+  data:
+    mongodb:
+      database: socialmedia
+      username: bilgeadamuser
+      password: '!b1lgeadam**'
+      host: 35.238.201.44
+      port: 27017
+  zipkin:
+    enabled: true
+    base-url: http://35.192.208.214:9411/
+    service-name: user-service
+
+logging:
+  level:
+    root: warn
+    org.springframework.boot: info
+    com.bilgeadam: debug
+  file:
+    name: userservice.log

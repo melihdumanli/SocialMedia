@@ -4,36 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="build.gradle updated.">
-      <change afterPath="$PROJECT_DIR$/KubernetesDocuments/Project/AllInOneLoadBalancer.yml" afterDir="false" />
+    <list default="true" id="aabd7760-7aea-410b-a245-24c1df436947" name="Changes" comment="RabbitListeners configured and activated.">
       <change afterPath="$PROJECT_DIR$/KubernetesDocuments/Project/AllInOnePod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KubernetesDocuments/Project/ElasticSearchDeploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KubernetesDocuments/Project/ExportEndPoint.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KubernetesDocuments/Project/ExportLoadBalancer.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KubernetesDocuments/Project/InGress.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KubernetesDocuments/Project/RabbitMWDeploy.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/services/auth-service.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/services/user-service.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/services/web-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/bilgeadam/ElasticSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/bilgeadam/config/rabbitmq/RabbitMQConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/bilgeadam/controller/ElasticController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/bilgeadam/mapper/ProfileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/bilgeadam/rabbitmq/consumer/ProfileConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/bilgeadam/rabbitmq/model/ProfileNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/bilgeadam/repository/IProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/bilgeadam/repository/entity/Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/bilgeadam/service/ElasticService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/secret-keys.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-service/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/manager/ProfileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/manager/ProfileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubernetesDocuments/Project/MongoDeploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/KubernetesDocuments/Project/MongoDeploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubernetesDocuments/Project/PostgresDeploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/KubernetesDocuments/Project/PostgresDeploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/build/classes/java/main/com/bilgeadam/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build/classes/java/main/com/bilgeadam/controller/RegisterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-service/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/com/bilgeadam/controller/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-service/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/resources/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,36 +81,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SocialMedia" type="f1a62948:ProjectNode" />
-                <item name="auth-service" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SocialMedia" type="f1a62948:ProjectNode" />
-                <item name="auth-service" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SocialMedia" type="f1a62948:ProjectNode" />
-                <item name="auth-service" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SocialMedia" type="f1a62948:ProjectNode" />
-                <item name="web-service" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SocialMedia" type="f1a62948:ProjectNode" />
-                <item name="web-service" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SocialMedia" type="f1a62948:ProjectNode" />
-                <item name="web-service" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
@@ -119,8 +99,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -189,12 +169,15 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\JavaWorkSpace\BilgeAdamSocialMedia\web-service\src\main\resources\templates" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.bilgeadam.repository" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.bilgeadam.dto.request" />
       <recent name="com.bilgeadam.constant" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthServiceSpring">
+  <component name="RunManager" selected="Gradle.BilgeAdamSocialMedia [build]">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -205,6 +188,48 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="BilgeAdamSocialMedia [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BilgeAdamSocialMedia [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="BilgeAdamSocialMedia:auth-service [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -248,48 +273,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BilgeAdamSocialMedia:auth-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/auth-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BilgeAdamSocialMedia:web-service [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/web-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="BilgeAdamSocialMedia" />
       <method v="2">
@@ -324,6 +307,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ElasticSearchService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SocialMedia.elastic-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bilgeadam.ElasticSearchService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceSpring" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SocialMedia.user-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bilgeadam.UserServiceSpring" />
@@ -346,11 +336,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BilgeAdamSocialMedia [build]" />
+        <item itemvalue="Gradle.BilgeAdamSocialMedia [clean]" />
         <item itemvalue="Spring Boot.WebService" />
         <item itemvalue="Gradle.BilgeAdamSocialMedia:auth-service [buildDependents]" />
         <item itemvalue="Gradle.BilgeAdamSocialMedia:auth-service [build]" />
-        <item itemvalue="Gradle.BilgeAdamSocialMedia:auth-service [clean]" />
-        <item itemvalue="Gradle.BilgeAdamSocialMedia:web-service [buildDependents]" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +379,10 @@
       <workItem from="1645798707683" duration="171000" />
       <workItem from="1645986774961" duration="749000" />
       <workItem from="1646066367214" duration="238000" />
-      <workItem from="1646164824097" duration="232000" />
+      <workItem from="1646164824097" duration="6372000" />
+      <workItem from="1646208474187" duration="1534000" />
+      <workItem from="1646313320650" duration="4000" />
+      <workItem from="1646722141673" duration="4346000" />
     </task>
     <task id="LOCAL-00001" summary="UserController edited.">
       <created>1643965038319</created>
@@ -643,7 +636,49 @@
       <option name="project" value="LOCAL" />
       <updated>1644953807154</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="build.gradle updated.">
+      <created>1646166388193</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1646166388193</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Load Balancer Updated">
+      <created>1646167131611</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1646167131611</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Security MVC activated.">
+      <created>1646169037544</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1646169037544</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Logging activated.">
+      <created>1646169941741</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1646169941741</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Sending notifications via Queue activated.">
+      <created>1646171759859</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1646171759859</updated>
+    </task>
+    <task id="LOCAL-00042" summary="RabbitListeners configured and activated.">
+      <created>1646722876796</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1646722876796</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,11 +711,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ProfileService added." />
-    <MESSAGE value="ProfileRepository added." />
-    <MESSAGE value="ProfileMapper added." />
-    <MESSAGE value="ProfileService and ProfileController edited." />
-    <MESSAGE value="ProfileRequestDto created." />
     <MESSAGE value="UserService components were edited because of mapping problems." />
     <MESSAGE value="Feign Client added." />
     <MESSAGE value="Controllers edited." />
@@ -701,16 +731,16 @@
     <MESSAGE value="Zipkin Configuration Implemented" />
     <MESSAGE value="api-gateway created." />
     <MESSAGE value="build.gradle updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="build.gradle updated." />
+    <MESSAGE value="Load Balancer Updated" />
+    <MESSAGE value="Security MVC activated." />
+    <MESSAGE value="Logging activated." />
+    <MESSAGE value="Sending notifications via Queue activated." />
+    <MESSAGE value="RabbitListeners configured and activated." />
+    <option name="LAST_COMMIT_MESSAGE" value="RabbitListeners configured and activated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/controller/UserController.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/bilgeadam/service/UserService.java</url>
           <line>35</line>
