@@ -1,5 +1,6 @@
 package com.bilgeadam.service;
 
+import com.bilgeadam.config.security.JwtTokenManager;
 import com.bilgeadam.dto.request.DoLoginRequestDto;
 import com.bilgeadam.dto.request.FindByAuthIdDto;
 import com.bilgeadam.dto.request.RegisterRequestDto;
@@ -25,6 +26,9 @@ public class UserService {
 
     @Autowired
     ProfileManager profileManager;
+
+    @Autowired
+    JwtTokenManager jwtTokenManager;
 
 
     /**
@@ -80,15 +84,23 @@ public class UserService {
              */
             long authid = user.get().getId();
             String profileid =   profileManager.findByAuthId(FindByAuthIdDto.builder().authid(authid).build()).getBody();
+            Optional<String> token = jwtTokenManager.createToken(profileid);
             /**
              * Eğer dönen değer, "" ise farklı dolu ise farklı işlem yapılacak.
              */
             if (profileid.equals("")){
                 return DoLoginResponseDto.builder().error(500).build();
             }else{
-                return DoLoginResponseDto.builder().profileid(profileid).error(200).build();
+                if(token.isPresent())
+                    return DoLoginResponseDto.builder().profileid(profileid).token(token.get()).error(200).build();
+                else
+                    return DoLoginResponseDto.builder().error(411).build();
             }
         }
         return DoLoginResponseDto.builder().error(410).build();
+    }
+
+    public boolean verifyToken(String token){
+        return jwtTokenManager.validateToken(token);
     }
 }

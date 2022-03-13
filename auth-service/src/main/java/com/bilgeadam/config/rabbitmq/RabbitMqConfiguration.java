@@ -1,4 +1,4 @@
-package com.bilgeadam.config;
+package com.bilgeadam.config.rabbitmq;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

@@ -52,6 +52,12 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 
+    @PostMapping("/validatetoken")
+    @Operation(summary = "Token kontrolü için kullanılır.")
+    public ResponseEntity<Boolean> verifyToken(String token){
+        return ResponseEntity.ok(userService.verifyToken(token));
+    }
+
     @PostMapping("/deleteuser")
     public ResponseEntity<Void> deleteUser(String message){
         userServiceProducer.deleteUser(Notification.builder()

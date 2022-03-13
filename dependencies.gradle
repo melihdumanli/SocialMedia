@@ -9,7 +9,8 @@ ext{
             mapstruct           : "1.4.2.Final",
             aws                 : "1.12.156",
             springGraphql       : "12.0.0",
-            springGraphiql      : "11.1.0"
+            springGraphiql      : "11.1.0",
+            auth0               : "3.18.3",
     ]
 
     libs = [
@@ -33,6 +34,7 @@ ext{
             springGraphql                       : "com.graphql-java-kickstart:graphql-spring-boot-starter:$versions.springGraphql",
             javaToolGraphql                     : "com.graphql-java-kickstart:graphql-java-tools:$versions.springGraphql",
 
+            auth0Jwt              : "com.auth0:java-jwt:$versions.auth0",
             thymeleaf             : "org.springframework.boot:spring-boot-starter-thymeleaf:$versions.springBoot",
             postgresql            : "org.postgresql:postgresql:$versions.postgresql",
             lombok                : "org.projectlombok:lombok:$versions.lombok",

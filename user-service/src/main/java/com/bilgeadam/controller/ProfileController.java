@@ -3,6 +3,7 @@ package com.bilgeadam.controller;
 import static com.bilgeadam.constant.RestApiUrls.*;
 
 import com.bilgeadam.dto.request.FindByAuthId;
+import com.bilgeadam.dto.request.IsProfileExistsDto;
 import com.bilgeadam.dto.request.ProfileRequestDto;
 import com.bilgeadam.rabbitmq.producer.ElasticProfileProducer;
 import com.bilgeadam.repository.entity.Profile;
@@ -43,5 +44,15 @@ public class ProfileController {
     @GetMapping(GETALL)
     public ResponseEntity<List<Profile>> findAll(){
         return ResponseEntity.ok(profileService.findall());
+    }
+
+    @PostMapping("/isprofileexistbyid")
+    public ResponseEntity<Boolean> isProfileExistById(@RequestBody IsProfileExistsDto dto){
+        Optional<Profile> profile = profileService.findById(dto.getProfileId());
+        if(profile.isPresent()){
+            return ResponseEntity.ok(true);
+        }else{
+            return ResponseEntity.ok(false);
+        }
     }
 }

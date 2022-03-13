@@ -3,6 +3,7 @@ package com.bilgeadam.manager;
 import static com.bilgeadam.constant.RestApiUrls.*;
 
 import com.bilgeadam.dto.request.FindByAuthIdDto;
+import com.bilgeadam.dto.request.IsProfileExistsDto;
 import com.bilgeadam.dto.request.ProfileRequestDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -22,4 +23,7 @@ public interface ProfileManager {
 
     @PostMapping(FINDBYAUTHID)
     public ResponseEntity<String> findByAuthId(@RequestBody @Valid FindByAuthIdDto dto);
+
+    @PostMapping("/isprofileexistbyid")
+    public ResponseEntity<Boolean> isProfileExistById(@RequestBody IsProfileExistsDto dto);
 }
