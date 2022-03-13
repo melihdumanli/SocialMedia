@@ -1,0 +1,28 @@
+type Profile{
+    id: ID!
+    profileId: String!
+    firstname: String!
+    lastname: String!
+    email: String!
+    country: String!
+    city: String!
+}
+
+input ProfileInput{
+    profileId: String!
+    firstname: String!
+    lastname: String!
+    email: String!
+    country: String!
+    city: String!
+}
+
+type Query{
+    findByFirstnameLike(firstname: String!): [Profile]
+    findAll: [Profile]
+}
+
+type Mutation{
+    createProfileElastic(profile: ProfileInput!): Boolean
+
+}
